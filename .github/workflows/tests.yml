@@ -28,3 +28,8 @@ jobs:
       run: |
         export PYTHONPATH=./src
         pytest tests/
+
+    - name: Run Pytest
+      run: |
+        pytest test_pytest.py -v
+        
