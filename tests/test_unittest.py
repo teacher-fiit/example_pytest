@@ -11,6 +11,9 @@ class TestMathOperations(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(divide(6, 2), 3)
 
+
     def test_divide_by_zero(self):
-        with self.assertRaises(ValueError, "Деление на ноль невозможно"):
-            divide(10, 0)
+        with self.assertRaises(ValueError) as cm:
+             divide(10, 0)
+
+        self.assertEqual(str(cm.exception), "Деление на ноль невозможно")
