@@ -11,3 +11,7 @@ def divide(a: float, b: float) -> float:
 def sub(a: float, b: float) -> float:
     """Возвращает разность двух чисел."""
     return a - b
+
+def mult(a: float, b: float) -> float:
+    """Возвращает разность двух чисел."""
+    return a * b
